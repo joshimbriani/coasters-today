@@ -1,11 +1,12 @@
 const config = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Coasters Today`,
+    author: `Josh`,
+    description: `A theme park site covering the best coasters and parks all over the world!`,
+    siteUrl: `https://coasterstoday/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `coasterstoday`,
+      instagram: `coasterstoday`
     },
   },
   plugins: [
