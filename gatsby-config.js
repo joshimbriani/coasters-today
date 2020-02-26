@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,
     author: `Kyle Mathews`,
@@ -78,3 +78,16 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+if (process.env.CONTEXT !== "production") {
+  const draftsConfig = {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `drafts`,
+      path: `${__dirname}/content/drafts`
+    }
+  };
+  config.plugins.push(draftsConfig);
+}
+
+module.exports = config
