@@ -1,7 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import Img from "gatsby-image"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
@@ -19,6 +20,7 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article key={node.fields.slug}>
+              <Img fluid={node.frontmatter.header.childImageSharp.sizes} />
               <header>
                 <h3
                   style={{
@@ -66,6 +68,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            header {
+              childImageSharp {
+                sizes(maxWidth: 1920) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
         }
       }

@@ -3,6 +3,7 @@ title: Welcome to Coasters Today
 date: "2020-02-27T22:12:03.284Z"
 description: "Let us introduce ourselves to you!"
 tags: ["intro", "coasters today"]
+header: header.jpg
 ---
 
 Welcome to Coasters Today! We're a little bit different from most generally focused coaster sites. Instead of focusing solely on the news, we plan on writing more evergreen articles highlighting both the roller coasters and theme parks that exist all over the world. We plan on sharing our experience traveling internationally for coasters and helping you do the same!

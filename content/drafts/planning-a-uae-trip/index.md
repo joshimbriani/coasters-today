@@ -3,6 +3,7 @@ title: Planning a coaster trip to the UAE
 date: "2020-02-28T22:12:03.284Z"
 description: "Looking to plan a coaster trip to the UAE? Let us walk you through how to best do it?"
 tags: ["trip planning", "uae", "international", "wb world", "ferrari world", "img worlds of adventure", "motiongate", "legoland dubai", "dubai", "abu dhabi", "coaster trip"]
+header: header.jpg
 ---
 
 # When to Visit
