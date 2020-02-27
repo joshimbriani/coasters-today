@@ -33,6 +33,39 @@ class Layout extends React.Component {
               {title}
             </Link>
           </h1>
+          <nav>
+            <ul id="top-nav">
+              <li>
+                <Link to="/posts">Posts</Link>
+              </li>
+              <li>
+                <Link to="/tags">Tags</Link>
+              </li>
+              <li>
+                <Link to="/forum">Forum</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+            </ul>
+            <ul id="tag-nav">
+              <li>
+                Top Tags
+              </li>
+              <li>
+                <Link to="/tags/details-in-the-park">Details In The Parks</Link>
+              </li>
+              <li>
+                <Link to="/tags/ride-reviews">Ride Reviews</Link>
+              </li>
+              <li>
+                <Link to="/tags/trip-planning">Trip Planning</Link>
+              </li>
+              <li>
+                <Link to="/tags/uae">UAE</Link>
+              </li>
+            </ul>
+          </nav>
         </header>
         <main
           style={{
