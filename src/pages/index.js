@@ -20,7 +20,9 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article key={node.fields.slug}>
-              <Img fluid={node.frontmatter.header.childImageSharp.sizes} />
+              <Link to={node.fields.slug}>
+                <Img fluid={node.frontmatter.header.childImageSharp.sizes} />
+              </Link>
               <header>
                 <h3
                   style={{

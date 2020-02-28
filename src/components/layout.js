@@ -3,23 +3,22 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
+import styles from "../styles/nav.module.css"
+
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     
     return (
-      <div
-        style={{
-          padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
-        }}
-      >
+      <div>
         <header>
           <h1
             style={{
               ...scale(1.5),
-              marginBottom: rhythm(1.5),
               marginTop: 0,
+              marginBottom: 0,
+              padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
             }}
           >
             <Link
@@ -34,18 +33,18 @@ class Layout extends React.Component {
             </Link>
           </h1>
           <nav>
-            <ul id="top-nav">
-              <li>
-                <Link to="/posts">Posts</Link>
+            <ul id="top-nav" className={styles.navcontainer}>
+              <li className={styles.navitem}>
+                <Link className={styles.navlink} to="/posts">Posts</Link>
               </li>
-              <li>
-                <Link to="/tags">Tags</Link>
+              <li className={styles.navitem}>
+                <Link className={styles.navlink} to="/tags">Tags</Link>
               </li>
-              <li>
-                <Link to="/forum">Forum</Link>
+              <li className={styles.navitem}>
+                <Link className={styles.navlink} to="/forum">Forum</Link>
               </li>
-              <li>
-                <Link to="/about">About</Link>
+              <li className={styles.navitem}>
+                <Link className={styles.navlink} to="/about">About</Link>
               </li>
             </ul>
             <ul id="tag-nav">
@@ -71,7 +70,8 @@ class Layout extends React.Component {
           style={{
             maxWidth: rhythm(40),
             marginLeft: 'auto',
-            marginRight: 'auto'
+            marginRight: 'auto',
+            padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
           }}>
           {children}
         </main>
