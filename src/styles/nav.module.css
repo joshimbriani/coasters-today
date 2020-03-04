@@ -3,8 +3,16 @@
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: gray;
     justify-content: space-evenly;
+}
+
+.main {
+    composes: navcontainer;
+    background-color: #E2DCCD;
+}
+
+.secondary {
+    composes: navcontainer;
 }
 
 .navitem {

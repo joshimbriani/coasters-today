@@ -33,7 +33,7 @@ class Layout extends React.Component {
             </Link>
           </h1>
           <nav>
-            <ul id="top-nav" className={styles.navcontainer}>
+            <ul className={styles.main}>
               <li className={styles.navitem}>
                 <Link className={styles.navlink} to="/posts">Posts</Link>
               </li>
@@ -47,7 +47,7 @@ class Layout extends React.Component {
                 <Link className={styles.navlink} to="/about">About</Link>
               </li>
             </ul>
-            <ul id="tag-nav">
+            <ul id="tag-nav" className={styles.navcontainer}>
               <li>
                 Top Tags
               </li>
