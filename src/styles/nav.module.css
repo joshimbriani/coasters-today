@@ -13,6 +13,7 @@
 
 .secondary {
     composes: navcontainer;
+    background-color: #F1EFEC;
 }
 
 .navitem {
@@ -20,7 +21,21 @@
     line-height: 40px;
     flex: 1;
     margin-bottom: 0;
-    
+}
+
+.tags {
+    composes: navitem;
+    font-size: 1.1em;
+    padding: 10px 0;
+    line-height: normal;
+    align-self: center;
+    text-align: center;
+}
+
+@media(max-width: 1024px) {
+    .tags {
+        font-size: 0.9em;
+    }
 }
 
 .navlink {
@@ -29,6 +44,7 @@
     transition: .3s background-color;
     padding: 10px 0;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .navlink:hover {

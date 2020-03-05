@@ -47,20 +47,22 @@ class Layout extends React.Component {
                 <Link className={styles.navlink} to="/about">About</Link>
               </li>
             </ul>
-            <ul id="tag-nav" className={styles.navcontainer}>
-              <li>
+            <ul id="tag-nav" className={styles.secondary}>
+              <li className={styles.tags} style={{
+                justifyContent: 'center'
+              }}>
                 Top Tags
               </li>
-              <li>
+              <li className={styles.tags}>
                 <Link to="/tags/details-in-the-park">Details In The Parks</Link>
               </li>
-              <li>
+              <li className={styles.tags}>
                 <Link to="/tags/ride-reviews">Ride Reviews</Link>
               </li>
-              <li>
+              <li className={styles.tags}>
                 <Link to="/tags/trip-planning">Trip Planning</Link>
               </li>
-              <li>
+              <li className={styles.tags}>
                 <Link to="/tags/uae">UAE</Link>
               </li>
             </ul>
